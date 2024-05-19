@@ -1,0 +1,77 @@
+{
+    "careers": {
+      "data_analyst": {
+        "skills": ["Excel", "SQL", "Python", "Statistics", "Data Visualization"],
+        "technologies": ["Tableau", "PowerBI", "R", "SAS"],
+        "projects": ["Sales Analysis", "Market Research", "Customer Segmentation"],
+        "resources": {
+          "courses": ["DataCamp - Data Analyst Career Track", "Coursera - Data Science Specialization"],
+          "books": ["Data Science for Business", "Python for Data Analysis"]
+        }
+      },
+      "software_developer": {
+        "skills": ["Java", "C++", "JavaScript", "Problem Solving", "Version Control"],
+        "technologies": ["React", "Node.js", "Docker", "Kubernetes"],
+        "projects": ["Web Application", "Mobile App", "API Development"],
+        "resources": {
+          "courses": ["Udemy - Complete Web Developer Bootcamp", "edX - Programming for Everybody"],
+          "books": ["Clean Code", "The Pragmatic Programmer"]
+        }
+      },
+      "machine_learning_engineer": {
+        "skills": ["Python", "Machine Learning Algorithms", "Data Preprocessing", "Deep Learning"],
+        "technologies": ["TensorFlow", "Keras", "scikit-learn", "PyTorch"],
+        "projects": ["Image Classification", "Natural Language Processing", "Recommendation Systems"],
+        "resources": {
+          "courses": ["Coursera - Machine Learning", "Udacity - Deep Learning Nanodegree"],
+          "books": ["Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow", "Deep Learning with Python"]
+        }
+      },
+      "cloud_engineer": {
+        "skills": ["Networking", "Linux", "Cloud Architecture", "Security"],
+        "technologies": ["AWS", "Azure", "Google Cloud Platform", "Terraform"],
+        "projects": ["Cloud Migration", "Infrastructure as Code", "Deploying Scalable Applications"],
+        "resources": {
+          "courses": ["AWS Certified Solutions Architect", "Azure Fundamentals"],
+          "books": ["Cloud Native DevOps with Kubernetes", "Terraform: Up & Running"]
+        }
+      },
+      "cyber_security_specialist": {
+        "skills": ["Network Security", "Cryptography", "Risk Assessment", "Incident Response"],
+        "technologies": ["Wireshark", "Metasploit", "Nmap", "Splunk"],
+        "projects": ["Vulnerability Assessment", "Penetration Testing", "Security Audits"],
+        "resources": {
+          "courses": ["Cybersecurity Specialization - Coursera", "Certified Ethical Hacker - Udemy"],
+          "books": ["The Web Application Hacker's Handbook", "Hacking: The Art of Exploitation"]
+        }
+      },
+      "ui_ux_designer": {
+        "skills": ["Wireframing", "Prototyping", "User Research", "Visual Design"],
+        "technologies": ["Sketch", "Adobe XD", "Figma", "InVision"],
+        "projects": ["Website Redesign", "Mobile App Design", "User Testing"],
+        "resources": {
+          "courses": ["Interaction Design Specialization - Coursera", "UX Design Fundamentals - Udemy"],
+          "books": ["Don't Make Me Think", "The Design of Everyday Things"]
+        }
+      },
+      "devops_engineer": {
+        "skills": ["Continuous Integration", "Continuous Deployment", "Infrastructure as Code", "Monitoring"],
+        "technologies": ["Jenkins", "Ansible", "Kubernetes", "Prometheus"],
+        "projects": ["CI/CD Pipeline Setup", "Automated Deployment", "Infrastructure Monitoring"],
+        "resources": {
+          "courses": ["DevOps Foundations - LinkedIn Learning", "Docker and Kubernetes - Udemy"],
+          "books": ["The Phoenix Project", "Accelerate"]
+        }
+      },
+      "product_manager": {
+        "skills": ["Product Roadmapping", "Market Research", "Agile Methodologies", "Stakeholder Management"],
+        "technologies": ["JIRA", "Trello", "Confluence", "Slack"],
+        "projects": ["New Product Launch", "Market Analysis", "Feature Prioritization"],
+        "resources": {
+          "courses": ["Digital Product Management - Coursera", "Become a Product Manager - Udacity"],
+          "books": ["Inspired: How To Create Products Customers Love", "Lean Product and Lean Analytics"]
+        }
+      }
+    }
+  }
+  

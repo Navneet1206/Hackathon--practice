@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Career Roadmap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Personalized Career Roadmap</h1>
+    <div class="container">
+        <div class="form-group">
+            <label for="year">Current Year of Engineering:</label>
+            <select id="year">
+                <option value="2">Second Year</option>
+                <option value="3">Third Year</option>
+                <option value="4">Final Year</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="career">Desired Career Path:</label>
+            <select id="career">
+                <option value="data_analyst">Data Analyst</option>
+                <option value="software_developer">Software Developer</option>
+                <option value="machine_learning_engineer">Machine Learning Engineer</option>
+                <option value="cloud_engineer">Cloud Engineer</option>
+                <option value="cyber_security_specialist">Cyber Security Specialist</option>
+                <option value="ui_ux_designer">UI/UX Designer</option>
+                <option value="devops_engineer">DevOps Engineer</option>
+                <option value="product_manager">Product Manager</option>
+            </select>
+        </div>
+        <button onclick="generateRoadmap()">Generate Roadmap</button>
+
+        <div id="roadmap"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
