@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Career Roadmap</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personalized Career Roadmap</h1>
+        <form id="career-form">
+            <label for="year">Current Year of Engineering:</label>
+            <select id="year" name="year">
+                <option value="" disabled selected>-Select-</option>
+                <option value="2">Second Year</option>
+                <option value="3">Third Year</option>
+                <option value="4">Fourth Year</option>
+            </select>
+
+            <label for="role">Desired Career Role:</label>
+            <select id="role" name="role">
+                <option value="" disabled selected>-Select-</option>
+                <option value="Data Analyst">Data Analyst</option>
+                <option value="Software Developer">Software Developer</option>
+                <option value="Network Engineer">Network Engineer</option>
+                <option value="Cybersecurity Specialist">Cybersecurity Specialist</option>
+                <option value="AI/ML Engineer">AI/ML Engineer</option>
+            </select>
+
+            <label for="skills">Current Skills:</label>
+            <select id="skills" name="skills" multiple>
+                <option value="Excel">Excel</option>
+                <option value="SQL">SQL</option>
+                <option value="Python">Python</option>
+                <option value="R">R</option>
+                <option value="Tableau">Tableau</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Java">Java</option>
+                <option value="C++">C++</option>
+                <option value="Git">Git</option>
+                <option value="Networking">Networking</option>
+                <option value="Cisco">Cisco</option>
+                <option value="Linux">Linux</option>
+                <option value="Network Security">Network Security</option>
+                <option value="Ethical Hacking">Ethical Hacking</option>
+                <option value="TensorFlow">TensorFlow</option>
+                <option value="Machine Learning">Machine Learning</option>
+                <option value="Deep Learning">Deep Learning</option>
+                <option value="Data Science">Data Science</option>
+            </select>
+
+            <label for="industry">Preferred Industry:</label>
+            <select id="industry" name="industry">
+                <option value="" disabled selected>-Select-</option>
+                <option value="Technology">Technology</option>
+                <option value="Finance">Finance</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Education">Education</option>
+                <option value="Manufacturing">Manufacturing</option>
+            </select>
+
+            <label for="interests">Technology Interests:</label>
+            <select id="interests" name="interests">
+                <option value="" disabled selected>-Select-</option>
+                <option value="AI">AI</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Data Analysis">Data Analysis</option>
+                <option value="Cybersecurity">Cybersecurity</option>
+                <option value="Networking">Networking</option>
+            </select>
+
+            <label for="aspirations">Career Aspirations:</label>
+            <select id="aspirations" name="aspirations">
+                <option value="" disabled selected>-Select-</option>
+                <option value="Lead Developer">Lead Developer</option>
+                <option value="Data Scientist">Data Scientist</option>
+                <option value="Security Expert">Security Expert</option>
+                <option value="Project Manager">Project Manager</option>
+                <option value="Researcher">Researcher</option>
+            </select>
+
+            <button type="button" onclick="generateRoadmap()">Generate Roadmap</button>
+        </form>
+
+        <div id="roadmap">
+            <h2>Your Personalized Career Roadmap</h2>
+            <div id="timeline"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
