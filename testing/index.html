@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Career Roadmap</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personalized Career Roadmap</h1>
+        <form id="career-form">
+            <label for="year">Current Year of Engineering:</label>
+            <select id="year" name="year">
+                <option value="2">Second Year</option>
+                <option value="3">Third Year</option>
+                <option value="4">Fourth Year</option>
+            </select>
+
+            <label for="role">Desired Career Role:</label>
+            <input type="text" id="role" name="role" placeholder="e.g., Data Analyst, Software Developer">
+
+            <label for="industry">Preferred Industry:</label>
+            <input type="text" id="industry" name="industry" placeholder="e.g., Technology, Finance">
+
+            <label for="interests">Technology Interests:</label>
+            <input type="text" id="interests" name="interests" placeholder="e.g., AI, Web Development">
+
+            <label for="aspirations">Career Aspirations:</label>
+            <input type="text" id="aspirations" name="aspirations" placeholder="e.g., Lead Developer, Data Scientist">
+
+            <button type="button" onclick="generateRoadmap()">Generate Roadmap</button>
+        </form>
+
+        <div id="roadmap">
+            <h2>Your Personalized Career Roadmap</h2>
+            <div id="timeline"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
