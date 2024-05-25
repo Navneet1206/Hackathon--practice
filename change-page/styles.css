@@ -77,6 +77,15 @@ body.dark-theme {
   color: var(--first-color);
 }
 
+body {
+  background-color: white;
+  color: black;
+}
+
+body.dark-theme {
+  background-color: black;
+  color: white;
+}
 
 body {
     font-family: Arial, sans-serif;

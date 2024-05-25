@@ -4,18 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Personalized Career Roadmap</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul style="list-style: none;">
-                <li>
-                    <i class="uil uil-moon change-theme" id="theme-button"></i>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <button id="theme-button">
+        <i class="uil uil-moon change-theme"></i>
+    </button>
     <div class="container">
         <h1>Your Personalized Career Roadmap</h1>
         <div id="timeline"></div>
@@ -43,6 +38,7 @@
 
         // Theme switcher
         const themeButton = document.getElementById('theme-button');
+        const themeIcon = themeButton.querySelector('i');
         const darkTheme = 'dark-theme';
         const iconTheme = 'uil-sun';
 
@@ -50,16 +46,16 @@
         const selectedIcon = localStorage.getItem('selected-icon');
 
         const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
-        const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun';
+        const getCurrentIcon = () => themeIcon.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun';
 
         if (selectedTheme) {
             document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
-            themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme);
+            themeIcon.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme);
         }
 
         themeButton.addEventListener('click', () => {
             document.body.classList.toggle(darkTheme);
-            themeButton.classList.toggle(iconTheme);
+            themeIcon.classList.toggle(iconTheme);
             localStorage.setItem('selected-theme', getCurrentTheme());
             localStorage.setItem('selected-icon', getCurrentIcon());
         });
