@@ -26,9 +26,6 @@ function generateRoadmap() {
         return;
     }
 
-    const timeline = document.getElementById('timeline');
-    timeline.innerHTML = '';
-
     const { skills, resources, projects } = window.careerData[role];
 
     const missingSkills = skills.filter(skill => !currentSkills.includes(skill.name.toLowerCase()));
@@ -64,15 +61,10 @@ function generateRoadmap() {
         }
     ];
 
-    roadmap.forEach((stage, index) => {
-        if (year <= index + 2) {
-            const stageDiv = document.createElement('div');
-            stageDiv.innerHTML = `<h3>${stage.year}</h3><ul>${stage.tasks.map(task => `<li>${task}</li>`).join('')}</ul>`;
-            timeline.appendChild(stageDiv);
-        }
-    });
+    // Save roadmap to localStorage
+    localStorage.setItem('roadmap', JSON.stringify(roadmap));
+    localStorage.setItem('resources', JSON.stringify(resources));
 
-    const resourcesDiv = document.createElement('div');
-    resourcesDiv.innerHTML = `<h3>Recommended Resources</h3><ul>${resources.map(resource => `<li>${resource}</li>`).join('')}</ul>`;
-    timeline.appendChild(resourcesDiv);
+    // Redirect to another page (e.g., roadmap.html)
+    window.location.href = 'roadmap.html';
 }

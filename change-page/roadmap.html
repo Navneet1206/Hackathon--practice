@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personalized Career Roadmap</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Personalized Career Roadmap</h1>
+        <div id="timeline"></div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const roadmap = JSON.parse(localStorage.getItem('roadmap'));
+            const resources = JSON.parse(localStorage.getItem('resources'));
+            const timeline = document.getElementById('timeline');
+
+            if (roadmap) {
+                roadmap.forEach(stage => {
+                    const stageDiv = document.createElement('div');
+                    stageDiv.innerHTML = `<h3>${stage.year}</h3><ul>${stage.tasks.map(task => `<li>${task}</li>`).join('')}</ul>`;
+                    timeline.appendChild(stageDiv);
+                });
+
+                const resourcesDiv = document.createElement('div');
+                resourcesDiv.innerHTML = `<h3>Recommended Resources</h3><ul>${resources.map(resource => `<li>${resource}</li>`).join('')}</ul>`;
+                timeline.appendChild(resourcesDiv);
+            } else {
+                timeline.innerHTML = '<p>No roadmap data available. Please generate a roadmap first.</p>';
+            }
+        });
+    </script>
+</body>
+</html>
