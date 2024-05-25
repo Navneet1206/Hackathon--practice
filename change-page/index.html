@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personalized Career Roadmap</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <header>
+        <nav>
+            <ul style="list-style: none;">
+                <li>
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
         <h1>Personalized Career Roadmap</h1>
         <form id="career-form">
+            <!-- Form elements as before -->
             <label for="year">Current Year of Engineering:</label>
             <select id="year" name="year">
                 <option value="" disabled selected>-Select-</option>
@@ -164,4 +177,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
