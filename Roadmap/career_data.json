@@ -1,0 +1,262 @@
+{
+    "Data Analyst": {
+        "skills": [
+            {
+                "name": "Excel",
+                "duration": "1 month",
+                "description": "Learn advanced data manipulation and analysis techniques using Excel."
+            },
+            {
+                "name": "SQL",
+                "duration": "2 months",
+                "description": "Master SQL querying for data extraction, manipulation, and database management."
+            },
+            {
+                "name": "Python",
+                "duration": "3 months",
+                "description": "Use Python for data cleaning, analysis, and visualization."
+            },
+            {
+                "name": "R",
+                "duration": "2 months",
+                "description": "Perform statistical analysis and create visualizations using R."
+            },
+            {
+                "name": "Tableau",
+                "duration": "1 month",
+                "description": "Create interactive data visualizations and dashboards with Tableau."
+            }
+        ],
+        "resources": [
+            "Coursera",
+            "edX",
+            "Kaggle",
+            "DataCamp"
+        ],
+        "projects": [
+            {
+                "name": "Data Cleaning",
+                "duration": "2 months",
+                "description": "Clean and preprocess large datasets for analysis."
+            },
+            {
+                "name": "Exploratory Data Analysis",
+                "duration": "3 months",
+                "description": "Analyze and visualize data to uncover trends and insights."
+            },
+            {
+                "name": "Visualization Projects",
+                "duration": "2 months",
+                "description": "Create visual representations of data for easy interpretation."
+            }
+        ]
+    },
+    "Software Developer": {
+        "skills": [
+            {
+                "name": "JavaScript",
+                "duration": "3 months",
+                "description": "Develop dynamic and interactive web applications using JavaScript."
+            },
+            {
+                "name": "Python",
+                "duration": "3 months",
+                "description": "Use Python for web development, scripting, and automation tasks."
+            },
+            {
+                "name": "Java",
+                "duration": "3 months",
+                "description": "Build scalable and reliable backend systems using Java."
+            },
+            {
+                "name": "C++",
+                "duration": "3 months",
+                "description": "Develop high-performance applications and systems using C++."
+            },
+            {
+                "name": "Git",
+                "duration": "1 month",
+                "description": "Learn version control with Git for collaborative software development."
+            }
+        ],
+        "resources": [
+            "FreeCodeCamp",
+            "Codecademy",
+            "Udemy",
+            "LeetCode"
+        ],
+        "projects": [
+            {
+                "name": "Web Development",
+                "duration": "4 months",
+                "description": "Create responsive and interactive websites using modern web technologies."
+            },
+            {
+                "name": "App Development",
+                "duration": "4 months",
+                "description": "Build mobile applications for iOS and Android platforms."
+            },
+            {
+                "name": "Open Source Contributions",
+                "duration": "3 months",
+                "description": "Contribute to open-source projects to gain practical experience and enhance skills."
+            }
+        ]
+    },
+    "Network Engineer": {
+        "skills": [
+            {
+                "name": "Networking",
+                "duration": "3 months",
+                "description": "Understand networking principles and protocols for efficient data communication."
+            },
+            {
+                "name": "Cisco",
+                "duration": "2 months",
+                "description": "Configure and manage Cisco networking devices for enterprise networks."
+            },
+            {
+                "name": "Python",
+                "duration": "3 months",
+                "description": "Automate network tasks and manage network infrastructure using Python scripts."
+            },
+            {
+                "name": "Linux",
+                "duration": "2 months",
+                "description": "Gain proficiency in Linux operating systems for network administration."
+            },
+            {
+                "name": "Network Security",
+                "duration": "3 months",
+                "description": "Implement and maintain network security measures to protect against cyber threats."
+            }
+        ],
+        "resources": [
+            "Cisco Academy",
+            "Udemy",
+            "Coursera",
+            "CompTIA"
+        ],
+        "projects": [
+            {
+                "name": "Network Configuration",
+                "duration": "3 months",
+                "description": "Design and configure network infrastructure based on business requirements."
+            },
+            {
+                "name": "Network Simulation",
+                "duration": "2 months",
+                "description": "Simulate network environments to test configurations and protocols."
+            },
+            {
+                "name": "Security Implementations",
+                "duration": "3 months",
+                "description": "Implement and evaluate network security solutions for enterprise networks."
+            }
+        ]
+    },
+    "Cybersecurity Specialist": {
+        "skills": [
+            {
+                "name": "Cybersecurity",
+                "duration": "3 months",
+                "description": "Learn fundamental principles and practices of cybersecurity."
+            },
+            {
+                "name": "Python",
+                "duration": "3 months",
+                "description": "Use Python for cybersecurity analysis, automation, and tool development."
+            },
+            {
+                "name": "Network Security",
+                "duration": "3 months",
+                "description": "Secure network infrastructure and defend against cyber threats."
+            },
+            {
+                "name": "Ethical Hacking",
+                "duration": "3 months",
+                "description": "Ethically hack systems to identify vulnerabilities and strengthen defenses."
+            },
+            {
+                "name": "Linux",
+                "duration": "2 months",
+                "description": "Utilize Linux-based tools and commands for cybersecurity operations."
+            }
+        ],
+        "resources": [
+            "Cybrary",
+            "Khan Academy",
+            "edX",
+            "Udacity"
+        ],
+        "projects": [
+            {
+                "name": "Security Audits",
+                "duration": "3 months",
+                "description": "Conduct security assessments and audits to identify risks and vulnerabilities."
+            },
+            {
+                "name": "Penetration Testing",
+                "duration": "3 months",
+                "description": "Test network and system defenses through controlled attacks."
+            },
+            {
+                "name": "Incident Response",
+                "duration": "2 months",
+                "description": "Develop and implement incident response plans to mitigate cybersecurity incidents."
+            }
+        ]
+    },
+    "AI/ML Engineer": {
+        "skills": [
+            {
+                "name": "Python",
+                "duration": "3 months",
+                "description": "Use Python for data manipulation, analysis, and machine learning model development."
+            },
+            {
+                "name": "TensorFlow",
+                "duration": "3 months",
+                "description": "Build and deploy machine learning models using TensorFlow framework."
+            },
+            {
+                "name": "Machine Learning",
+                "duration": "3 months",
+                "description": "Apply machine learning algorithms to analyze and extract insights from data."
+            },
+            {
+                "name": "Deep Learning",
+                "duration": "3 months",
+                "description": "Develop deep neural networks for complex data analysis and pattern recognition."
+            },
+            {
+                "name": "Data Science",
+                "duration": "3 months",
+                "description": "Apply statistical techniques and data visualization for data-driven decision making."
+            }
+        ],
+        "resources": [
+            "Coursera",
+            "edX",
+            "Udacity",
+            "Kaggle"
+        ],
+        "projects": [
+            {
+                "name": "ML Models",
+                "duration": "4 months",
+                "description": "Design and implement machine learning models for various applications."
+            },
+            {
+                "name": "AI Algorithms",
+                "duration": "4 months",
+                "description": "Develop algorithms and techniques for artificial intelligence applications."
+            },
+            {
+                "name": "Data Analysis",
+                "duration": "3 months",
+                "description": "Analyze and interpret data using machine learning and statistical methods."
+            }
+        ]
+    }
+}

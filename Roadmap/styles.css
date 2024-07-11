@@ -16,7 +16,10 @@ body {
 h1, h2 {
     text-align: center;
 }
-
+h3 {
+    margin-top: 20px;
+}
+    
 form {
     display: flex;
     flex-direction: column;
@@ -52,4 +55,13 @@ button:hover {
     padding: 10px;
     background: #e9ecef;
     border-radius: 5px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
 }

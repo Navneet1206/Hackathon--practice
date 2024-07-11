@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personalized Career Roadmap</title>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    
-    <button id="theme-button">
-        <i class="uil uil-moon change-theme"></i>
-    </button>
-     <div class="container">
+    <div class="container">
         <h1>Personalized Career Roadmap</h1>
         <form id="career-form">
-            <!-- Form elements as before -->
             <label for="year">Current Year of Engineering:</label>
             <select id="year" name="year">
                 <option value="" disabled selected>-Select-</option>
+                <option value="1">First Year</option>
                 <option value="2">Second Year</option>
                 <option value="3">Third Year</option>
                 <option value="4">Fourth Year</option>
@@ -37,9 +30,10 @@
             </select>
 
             <!-- ============Current Skills============  -->
+            
             <!-- ============Skill 1============  -->
             <label for="skills1">Current Skills 1:</label>
-            <select id="skills1" name="skills">
+            <select id="skills1" class="skills" name="skills1">
                 <option value="" disabled selected>-Select-</option>
                 <option value="None">None</option>
                 <option value="Excel">Excel</option>
@@ -64,7 +58,7 @@
 
             <!-- ============Skill 2============  -->
             <label for="skills2">Current Skills 2:</label>
-            <select id="skills2" name="skills">
+            <select id="skills2" class="skills" name="skills2">
                 <option value="" disabled selected>-Select-</option>
                 <option value="None">None</option>
                 <option value="Excel">Excel</option>
@@ -89,7 +83,7 @@
 
             <!-- ============Skill 3============  -->
             <label for="skills3">Current Skills 3:</label>
-            <select id="skills3" name="skills">
+            <select id="skills3" class="skills" name="skills3">
                 <option value="" disabled selected>-Select-</option>
                 <option value="None">None</option>
                 <option value="Excel">Excel</option>
@@ -114,7 +108,7 @@
 
             <!-- ============Skill 4============  -->
             <label for="skills4">Current Skills 4:</label>
-            <select id="skills4" name="skills">
+            <select id="skills4" class="skills" name="skills4">
                 <option value="" disabled selected>-Select-</option>
                 <option value="None">None</option>
                 <option value="Excel">Excel</option>
@@ -169,8 +163,12 @@
 
             <button type="button" onclick="generateRoadmap()">Generate Roadmap</button>
         </form>
+
+        <div id="roadmap">
+            <h2>Your Personalized Career Roadmap</h2>
+            <div id="timeline"></div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
-
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Career Roadmap</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generated Career Roadmap</h1>
+        <div id="roadmap">
+            <h2>Your Personalized Career Roadmap</h2>
+            <div id="timeline"></div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const roadmapData = JSON.parse(decodeURIComponent(urlParams.get('data')));
+
+            const timeline = document.getElementById('timeline');
+            roadmapData.forEach(stage => {
+                const stageDiv = document.createElement('div');
+                stageDiv.innerHTML = `<h3>${stage.year}</h3><ul>${stage.tasks.map(task => `<li>${task}</li>`).join('')}</ul>`;
+                timeline.appendChild(stageDiv);
+            });
+        });
+    </script> -->
+    <script src="script_generated.js"></script>
+</body>
+</html>
