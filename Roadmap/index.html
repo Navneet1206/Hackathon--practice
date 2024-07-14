@@ -169,6 +169,67 @@
             <div id="timeline"></div>
         </div>
     </div>
+     <script>
+        function toggleRoadmapContainer() {
+            const year = document.getElementById("year").value;
+            const roadmapContainer = document.getElementById("roadmapContainer");
+            const roadmapDiv = document.getElementById("roadmap");
+
+            if (year) {
+                roadmapContainer.style.display = "block";
+                generateRoadmap(year, roadmapDiv);
+            } else {
+                roadmapContainer.style.display = "none";
+                roadmapDiv.innerHTML = ''; // Clear previous roadmap
+            }
+        }
+
+        function generateRoadmap(year, roadmapDiv) {
+            roadmapDiv.innerHTML = ''; // Clear previous roadmap
+
+            let roadmapContent = '';
+
+            switch (year) {
+                case "1":
+                    roadmapContent = `
+                        <div class="roadmap-year">
+                            <h3>First Year Roadmap</h3>
+                            <ul>
+                                <li>Introduction to Programming</li>
+                                <li>Basic Mathematics</li>
+                                <li>Computer Fundamentals</li>
+                            </ul>
+                        </div>`;
+                    break;
+                case "2":
+                    roadmapContent = `
+                        <div class="roadmap-year">
+                            <h3>Second Year Roadmap</h3>
+                            <ul>
+                                <li>Data Structures</li>
+                                <li>Algorithms</li>
+                                <li>Advanced Mathematics</li>
+                            </ul>
+                        </div>`;
+                    break;
+                case "3":
+                    roadmapContent = `
+                        <div class="roadmap-year">
+                            <h3>Third Year Roadmap</h3>
+                            <ul>
+                                <li>Software Engineering</li>
+                                <li>Database Systems</li>
+                                <li>Operating Systems</li>
+                            </ul>
+                        </div>`;
+                    break;
+                default:
+                    roadmapContent = `<p>Please select a valid year.</p>`;
+            }
+
+            roadmapDiv.innerHTML = roadmapContent;
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

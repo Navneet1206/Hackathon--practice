@@ -11,6 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const resourcesDiv = document.createElement('div');
-    resourcesDiv.innerHTML = `<h3>Recommended Resources</h3><ul>${resourcesData.map(resource => `<li>${resource}</li>`).join('')}</ul>`;
+    resourcesDiv.innerHTML = `<h3>Recommended Resources</h3><ul>${roadmapData[roadmapData.length - 1].resources.map(resource => `<li>${resource}</li>`).join('')}</ul>`;
     timeline.appendChild(resourcesDiv);
 });

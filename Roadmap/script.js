@@ -7,8 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error('Error fetching career data:', error));
 });
 
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const skillSelects = document.querySelectorAll('.skills');
 
@@ -19,14 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function updateSkillOptions() {
-        // Get all selected skills
         const selectedSkills = Array.from(skillSelects).map(select => select.value).filter(value => value !== "");
 
         skillSelects.forEach(select => {
-            // Get the previously selected option
             const previousSelectedOption = select.getAttribute('data-previous');
 
-            // Re-enable the previously selected option in other dropdowns
             if (previousSelectedOption && previousSelectedOption !== "") {
                 skillSelects.forEach(otherSelect => {
                     if (otherSelect !== select) {
@@ -38,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
 
-            // Disable the currently selected option in other dropdowns
             const currentSelectedOption = select.value;
             if (currentSelectedOption && currentSelectedOption !== "") {
                 skillSelects.forEach(otherSelect => {
@@ -51,17 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
 
-            // Update the previously selected option attribute
             select.setAttribute('data-previous', currentSelectedOption);
         });
     }
 
-    // Initial call to set the initial state
     updateSkillOptions();
 });
-
-
-
 
 function generateRoadmap() {
     const year = parseInt(document.getElementById('year').value);
@@ -130,6 +119,7 @@ function generateRoadmap() {
     ];
 
     roadmap.forEach((stage, index) => {
+        // Only append roadmap stages that are relevant to the current year and beyond
         if (year <= index + 1) {
             const stageDiv = document.createElement('div');
             stageDiv.innerHTML = `<h3>${stage.year}</h3><ul>${stage.tasks.map(task => `<li>${task}</li>`).join('')}</ul>`;
@@ -143,6 +133,7 @@ function generateRoadmap() {
 
     // Redirect to generated_roadmap.html passing roadmap data as query parameter
     const urlParams = new URLSearchParams();
-    urlParams.append('data', JSON.stringify(roadmap));
+    urlParams.append('data', JSON.stringify(roadmap.filter((stage, index) => year <= index + 1)));
     window.location.href = `generated_roadmap.html?${urlParams.toString()}`;
 }
+
